@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background color</title>
+</head>
+
+<body>
+    <h1>Background Color Change</h1>
+    <input type="text" id="colorText">
+    <!-- <input type="color" id="colorInput"> -->
+
+    <!-- <input type="button" id="colorButton" value="Click to change color" onclick="changeColor()"> -->
+    <!-- <button onclick="changeColor()">Click to change color</button> -->
+    <button id="btn">Click to change color</button>
+
+
+    <script>
+        // function changeColor() {
+        //     let color = document.getElementById("colorInput").value;
+        //     document.body.style.backgroundColor = color;
+        //     document.getElementById("colorText").value = color;
+        // }
+
+        // function changeColor() {
+        //     let color = document.getElementById("colorText").value;
+        //     document.body.style.backgroundColor = color;
+        // }
+
+        let btn = document.getElementById("btn");
+        function changeColor() {
+            let color = document.getElementById("colorText");
+            document.body.style.backgroundColor = color.value;
+
+        }
+        btn.addEventListener("click", changeColor);
+    </script>
+
+    <script src="string.js"></script>
+</body>
+
+</html>
